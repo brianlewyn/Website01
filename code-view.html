@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="/assets/css/style.css">
   <title>About POO</title>
 </head>
-<body class="bg-dark">
+<body>
 
   <header class="sticky-top">
     <nav class="container-fluid navbar bg-secondary py-2">
@@ -62,133 +62,185 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-12 col-lg-9">
-        <main class="container-lg fs-5 text-light text-opacity-75 my-4 px-1 px-sm-2 ps-lg-3">
-          <article>
-            <h2 id="WhatIs" class="text-light">¿Qué es la Programación Orientada a Objetos?</h2>
-      
-            <div>
-              <p>La <b>Programación Orientada a Objetos</b> (POO) es un paradigma de programación, es decir, un modelo o un estilo de programación que nos da unas guías sobre cómo trabajar con él. Se basa en el concepto de clases y objetos. Este tipo de programación se utiliza para estructurar un programa de software en piezas simples y reutilizables de planos de código (clases) para crear instancias individuales de objetos.</p><br>
-
-              <p>A lo largo de la historia, han ido apareciendo diferentes paradigmas de programación. Lenguajes secuenciales como COBOL o procedimentales como Basic o C, se centraban más en la lógica que en los datos. Otros más modernos como Java, C# y Python, utilizan paradigmas para definir los programas, siendo la Programación Orientada a Objetos la más popular.</p><br>
-
-              <p>Con el paradigma de Programación Orientado a Objetos lo que buscamos es dejar de centrarnos en la lógica pura de los programas, para empezar a pensar en objetos, lo que constituye la base de este paradigma. Esto nos ayuda muchísimo en sistemas grandes, ya que en vez de pensar en funciones, pensamos en las relaciones o interacciones de los diferentes componentes del sistema.</p><br>
-
-              <p>Un programador diseña un programa de software organizando piezas de información y comportamientos relacionados en una plantilla llamada clase. Luego, se crean objetos individuales a partir de la plantilla de clase. Todo el programa de software se ejecuta haciendo que varios objetos interactúen entre sí para crear un programa más grande.</p>
-            </div>
+        <main class="container-lg fs-5 my-4 px-1 px-sm-2 ps-lg-3">
+          <section>
+            <article>
+              <h2 id="WhatIs">¿Qué es la Programación Orientada a Objetos?</h2>
+        
+              <div>
+                <p>La <b>Programación Orientada a Objetos</b> (POO) es un paradigma de programación, es decir, un modelo o un estilo de programación que nos da unas guías sobre cómo trabajar con él. Se basa en el concepto de clases y objetos. Este tipo de programación se utiliza para estructurar un programa de software en piezas simples y reutilizables de planos de código (clases) para crear instancias individuales de objetos.</p><br>
+  
+                <p>A lo largo de la historia, han ido apareciendo diferentes paradigmas de programación. Lenguajes secuenciales como COBOL o procedimentales como Basic o C, se centraban más en la lógica que en los datos. Otros más modernos como Java, C# y Python, utilizan paradigmas para definir los programas, siendo la Programación Orientada a Objetos la más popular.</p><br>
+  
+                <p>Con el paradigma de Programación Orientado a Objetos lo que buscamos es dejar de centrarnos en la lógica pura de los programas, para empezar a pensar en objetos, lo que constituye la base de este paradigma. Esto nos ayuda muchísimo en sistemas grandes, ya que en vez de pensar en funciones, pensamos en las relaciones o interacciones de los diferentes componentes del sistema.</p><br>
+  
+                <p>Un programador diseña un programa de software organizando piezas de información y comportamientos relacionados en una plantilla llamada clase. Luego, se crean objetos individuales a partir de la plantilla de clase. Todo el programa de software se ejecuta haciendo que varios objetos interactúen entre sí para crear un programa más grande.</p>
+              </div>
+              <br>
+              <div class="d-flex flex-column flex-md-row gap-3">
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2AJ6VJ4Xstc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="ratio ratio-16x9">
+                  <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DlphYPc_HKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+              </div>
+            </article>
+            
             <br>
-            <div class="d-flex flex-column flex-md-row gap-3">
-              <div class="ratio ratio-16x9">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/2AJ6VJ4Xstc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            
+            <article>
+              <h2 id="POO">¿Por qué POO?</h2>
+                  
+              <div>
+                <p>La Programación Orientada a objetos permite que el código sea reutilizable, organizado y fácil de mantener. Sigue el principio de desarrollo de software utilizado por muchos programadores <b>DRY (Don’t Repeat Yourself)</b>, para evitar duplicar el código y crear de esta manera programas eficientes. Además, evita el acceso no deseado a los datos o la exposición de código propietario mediante la encapsulación y la abstracción, de la que hablaremos en detalle más adelante.</p>
               </div>
-              <div class="ratio ratio-16x9">
-                <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DlphYPc_HKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              </div>
-            </div>
-          </article>
-          
-          <br>
-          
-          <article>
-            <h2 id="POO" class="text-light">¿Por qué POO?</h2>
+            </article>
+            
+            <br>
+            
+            <article>
+              <h2 id="Clases-Objetos-Intancias">Clases, objetos e instancias</h2>
+        
+              <div>
+                <p>¿Cómo se crean los programas orientados a objetos? Resumiendo mucho, consistiría en hacer clases y crear objetos a partir de estas clases. Las clases forman el modelo a partir del que se estructuran los datos y los comportamientos.</p><br>
+  
+                <p><b>Clase:</b> Es una plantilla. Define de manera genérica cómo van a ser los objetos de un determinado tipo.</p>
+        
+                <p><b>Objeto:</b> Estos elementos son entidades provistas de un conjunto de propiedades y atributos, son considerados instancias de una clase.</p>
                 
-            <div>
-              <p>La Programación Orientada a objetos permite que el código sea reutilizable, organizado y fácil de mantener. Sigue el principio de desarrollo de software utilizado por muchos programadores <b>DRY (Don’t Repeat Yourself)</b>, para evitar duplicar el código y crear de esta manera programas eficientes. Además, evita el acceso no deseado a los datos o la exposición de código propietario mediante la encapsulación y la abstracción, de la que hablaremos en detalle más adelante.</p>
-            </div>
-          </article>
-          
-          <br>
-          
-          <article>
-            <h2 id="Clases-Objetos-Intancias" class="text-light">Clases, objetos e instancias</h2>
-      
-            <div>
-              <p>¿Cómo se crean los programas orientados a objetos? Resumiendo mucho, consistiría en hacer clases y crear objetos a partir de estas clases. Las clases forman el modelo a partir del que se estructuran los datos y los comportamientos.</p><br>
+                <p><b>Método:</b> Un método es un algoritmo asociado a un objeto cualquiera, es decir, es un conjunto de operaciones que se realizan a los datos que son asignados a un objeto.</p>
+                
+                <p><b>Instancia:</b> Se llama instancia a todo objeto que derive de algún otro. De esta forma, todos los objetos son instancias de algún otro, menos la clase Object que es la madre de todas.</p>
+                
+                <p><b>Atributos:</b> Características que aplican al objeto solo en el caso en que el sea visible en pantalla por el usuario; entonces sus atributos son el aspecto que refleja, tanto en color, tamaño, posición, si está o no habilitado.</p>
+                
+                <p>Todo esto, junto con los principios que vamos a ver a continuación, son herramientas que nos pueden ayudar a escribir un código mejor, más limpio y reutilizable.</p>
+              </div>
+            </article>
+            
+            <br>
+            
+            <article>
+              <h2 id="Principios">4 Principios de la POO</h2>
+        
+              <ul>
+                <li><b>La encapsulación</b>
+                  <div>
+                    <p>La encapsulación contiene toda la información importante de un objeto dentro del mismo y solo expone la información seleccionada al mundo exterior.</p>
+                    <p>Esta propiedad permite asegurar que la información de un objeto esté oculta para el mundo exterior, agrupando en una Clase las características o atributos que cuentan con un acceso privado, y los comportamientos o métodos que presentan un acceso público.</p>
+                  </div>
+                </li><br>
+                
+                <li><b>La abstracción</b>
+                  <div>
+                    <p>La abstracción es cuando el usuario interactúa solo con los atributos y métodos seleccionados de un objeto, utilizando herramientas simplificadas de alto nivel para acceder a un objeto complejo.</p>
+                    <p>En la programación orientada a objetos, los programas suelen ser muy grandes y los objetos se comunican mucho entre sí. El concepto de abstracción facilita el mantenimiento de un código de gran tamaño, donde a lo largo del tiempo pueden surgir diferentes cambios.</p>
+                  </div>
+                </li><br>
+        
+                <li><b>La herencia</b>
+                  <div>
+                    <p>La herencia define relaciones jerárquicas entre clases, de forma que atributos y métodos comunes puedan ser reutilizados. Las clases principales extienden atributos y comportamientos a las clases secundarias. A través de la definición en una clase de los atributos y comportamientos básicos, se pueden crear clases secundarias, ampliando así la funcionalidad de la clase principal y agregando atributos y comportamientos adicionales.</p>
+                  </div>
+                </li><br>
+        
+                <li><b>El polimorfismo</b>
+                  <div>
+                    <p>El polimorfismo consiste en diseñar objetos para compartir comportamientos, lo que nos permite procesar objetos de diferentes maneras. Es la capacidad de presentar la misma interfaz para diferentes formas subyacentes o tipos de datos. Al utilizar la herencia, los objetos pueden anular los comportamientos principales compartidos, con comportamientos secundarios específicos. El polimorfismo permite que el mismo método ejecute diferentes comportamientos de dos formas: anulación de método y sobrecarga de método.</p>
+                  </div>
+                </li>
+              </ul>
+            </article>
+            
+            <br>
+            
+            <article>
+              <h2 id="Beneficios">Beneficios de Programación Orientada a Objetos</h2>
+                
+              <ul>
+                <li>Reutilización del código.</li>
+                <li>Convierte cosas complejas en estructuras simples reproducibles.</li>
+                <li>Evita la duplicación de código.</li>
+                <li>Permite trabajar en equipo gracias al encapsulamiento ya que minimiza la posibilidad de duplicar funciones cuando varias personas trabajan sobre un mismo objeto al mismo tiempo.</li>
+                <li>Al estar la clase bien estructurada permite la corrección de errores en varios lugares del código.</li>
+                <li>Protege la información a través de la encapsulación, ya que solo se puede acceder a los datos del objeto a través de propiedades y métodos privados.</li>
+                <li>La abstracción nos permite construir sistemas más complejos y de una forma más sencilla y organizada.</li>
+              </ul>
+            </article>
+            
+            <br>
+            
+            <article>
+              <h2 id="Conclusión">Conclusión</h2>
+                
+              <div>
+                <p>La Programación Orientada a Objetos es actualmente el paradigma que más se utiliza para diseñar aplicaciones y programas informáticos. Son muchas sus ventajas, principalmente cuando necesitas resolver desafíos de programación complejos. Permite una mejor estructura de datos y reutilización del código, lo que facilita el ahorro de tiempo a largo plazo. Eso sí, para ello se requiere pensar bien en la estructura del programa, planificar al comienzo de la codificación, así como analizar los requisitos en clases simples y reutilizables que se pueden usar para diseñar instancias de objetos.</p><br>
+  
+                <p>Para más información, visita la página: 
+                  <a href="https://profile.es/blog/que-es-la-programacion-orientada-a-objetos/" target="_blanck" class="link-primary">Profiles</a> o 
+                  <a href="https://culturacion.com/que-es-la-programacion-orientada-a-objetos-i/" target="_blanck" class="link-primary">Culturación</a>
+                </p>
+              </div>
+            </article>
+          </section>
 
-              <p><b>Clase:</b> Es una plantilla. Define de manera genérica cómo van a ser los objetos de un determinado tipo.</p>
-      
-              <p><b>Objeto:</b> Estos elementos son entidades provistas de un conjunto de propiedades y atributos, son considerados instancias de una clase.</p>
-              
-              <p><b>Método:</b> Un método es un algoritmo asociado a un objeto cualquiera, es decir, es un conjunto de operaciones que se realizan a los datos que son asignados a un objeto.</p>
-              
-              <p><b>Instancia:</b> Se llama instancia a todo objeto que derive de algún otro. De esta forma, todos los objetos son instancias de algún otro, menos la clase Object que es la madre de todas.</p>
-              
-              <p><b>Atributos:</b> Características que aplican al objeto solo en el caso en que el sea visible en pantalla por el usuario; entonces sus atributos son el aspecto que refleja, tanto en color, tamaño, posición, si está o no habilitado.</p>
-              
-              <p>Todo esto, junto con los principios que vamos a ver a continuación, son herramientas que nos pueden ayudar a escribir un código mejor, más limpio y reutilizable.</p>
-            </div>
-          </article>
-          
           <br>
-          
-          <article>
-            <h2 id="Principios" class="text-light">4 Principios de la POO</h2>
-      
-            <ul>
-              <li><b>La encapsulación</b>
-                <div>
-                  <p>La encapsulación contiene toda la información importante de un objeto dentro del mismo y solo expone la información seleccionada al mundo exterior.</p>
-                  <p>Esta propiedad permite asegurar que la información de un objeto esté oculta para el mundo exterior, agrupando en una Clase las características o atributos que cuentan con un acceso privado, y los comportamientos o métodos que presentan un acceso público.</p>
-                </div>
-              </li><br>
-              
-              <li><b>La abstracción</b>
-                <div>
-                  <p>La abstracción es cuando el usuario interactúa solo con los atributos y métodos seleccionados de un objeto, utilizando herramientas simplificadas de alto nivel para acceder a un objeto complejo.</p>
-                  <p>En la programación orientada a objetos, los programas suelen ser muy grandes y los objetos se comunican mucho entre sí. El concepto de abstracción facilita el mantenimiento de un código de gran tamaño, donde a lo largo del tiempo pueden surgir diferentes cambios.</p>
-                </div>
-              </li><br>
-      
-              <li><b>La herencia</b>
-                <div>
-                  <p>La herencia define relaciones jerárquicas entre clases, de forma que atributos y métodos comunes puedan ser reutilizados. Las clases principales extienden atributos y comportamientos a las clases secundarias. A través de la definición en una clase de los atributos y comportamientos básicos, se pueden crear clases secundarias, ampliando así la funcionalidad de la clase principal y agregando atributos y comportamientos adicionales.</p>
-                </div>
-              </li><br>
-      
-              <li><b>El polimorfismo</b>
-                <div>
-                  <p>El polimorfismo consiste en diseñar objetos para compartir comportamientos, lo que nos permite procesar objetos de diferentes maneras. Es la capacidad de presentar la misma interfaz para diferentes formas subyacentes o tipos de datos. Al utilizar la herencia, los objetos pueden anular los comportamientos principales compartidos, con comportamientos secundarios específicos. El polimorfismo permite que el mismo método ejecute diferentes comportamientos de dos formas: anulación de método y sobrecarga de método.</p>
-                </div>
-              </li>
-            </ul>
-          </article>
-          
-          <br>
-          
-          <article>
-            <h2 id="Beneficios" class="text-light">Beneficios de Programación Orientada a Objetos</h2>
-              
-            <ul>
-              <li>Reutilización del código.</li>
-              <li>Convierte cosas complejas en estructuras simples reproducibles.</li>
-              <li>Evita la duplicación de código.</li>
-              <li>Permite trabajar en equipo gracias al encapsulamiento ya que minimiza la posibilidad de duplicar funciones cuando varias personas trabajan sobre un mismo objeto al mismo tiempo.</li>
-              <li>Al estar la clase bien estructurada permite la corrección de errores en varios lugares del código.</li>
-              <li>Protege la información a través de la encapsulación, ya que solo se puede acceder a los datos del objeto a través de propiedades y métodos privados.</li>
-              <li>La abstracción nos permite construir sistemas más complejos y de una forma más sencilla y organizada.</li>
-            </ul>
-          </article>
-          
-          <br>
-          
-          <article>
-            <h2 id="Conclusión" class="text-light">Conclusión</h2>
-              
-            <div>
-              <p>La Programación Orientada a Objetos es actualmente el paradigma que más se utiliza para diseñar aplicaciones y programas informáticos. Son muchas sus ventajas, principalmente cuando necesitas resolver desafíos de programación complejos. Permite una mejor estructura de datos y reutilización del código, lo que facilita el ahorro de tiempo a largo plazo. Eso sí, para ello se requiere pensar bien en la estructura del programa, planificar al comienzo de la codificación, así como analizar los requisitos en clases simples y reutilizables que se pueden usar para diseñar instancias de objetos.</p><br>
 
-              <p>Para más información, visita la página: 
-                <a href="https://profile.es/blog/que-es-la-programacion-orientada-a-objetos/" target="_blanck">Profiles</a> o 
-                <a href="https://culturacion.com/que-es-la-programacion-orientada-a-objetos-i/" target="_blanck">Culturación</a>
-              </p>
+          <form class="fs-5">
+            <h3>Deja una respuesta</h3>
+
+            <div class="row row-cols-1 row-cols-md-2">
+              <div class="col mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="First name">
+                  <label for="floatingInput">First name</label>
+                </div>
+              </div>
+              
+              <div class="col mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Last name">
+                  <label for="floatingInput">Last name</label>
+                </div>
+              </div>
+
+              <div class="col mb-3">
+                <div class="form-floating">
+                  <input type="text" class="form-control" id="floatingInput" placeholder="Subject name">
+                  <label for="floatingInput">Subject name</label>
+                </div>
+              </div>
+
+              <div class="col mb-3">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                  <label for="floatingInput">Email address</label>
+                </div>
+              </div>
+
+              <div class="col mb-3 col-md-12">
+                <div class="form-floating">
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
+                  <label for="floatingTextarea">Leave a comment here</label>
+                </div>
+              </div>
+
+              <div class="col-12">
+                <button type="reset" class="btn btn-dark fs-5">Reset</button>
+                <button type="submit" class="btn btn-primary fs-5">Submit</button>
+              </div>
             </div>
-          </article>
+          </form>
         </main>
       </div>
       
       <div class="col-12 col-lg-3">
         <aside class="container-lg h-100 px-lg-0 my-4 px-1 px-sm-2">
           <div>
-            <h3 class="text-center text-light border-bottom border-light pb-2">Videos relacionados</h3>
+            <h3 class="text-center border-bottom border-dark pb-2">
+              Videos relacionados
+            </h3>
             
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-1">
               <div class="col py-2">
@@ -226,26 +278,28 @@
           
           <br>
           
-          <div class="d-none sticky-lg-top bg-info d-lg-block pt-2 Box-Menu p-2">
-            <h3 class="text-dark text-center border-bottom border-dark pb-2">Menú</h3>
+          <div class="d-none sticky-lg-top bg-dark d-lg-block pt-2 Box-Menu p-2">
+            <h3 class="text-light text-center border-bottom border-light pb-2">
+              Menú
+            </h3>
 
-            <ul class="link-dark fs-5">
-              <li><a href="#WhatIs" class="link-dark text-decoration-none">
+            <ul class="link-light fs-5">
+              <li><a href="#WhatIs" class="link-light text-decoration-none">
                 ¿Qué es la Programación Orientada a Objetos?</a>
               </li>
-              <li><a href="#POO" class="link-dark text-decoration-none">
+              <li><a href="#POO" class="link-light text-decoration-none">
                 ¿Por qué POO?</a>
               </li>
-              <li><a href="#Clases-Objetos-Intancias" class="link-dark text-decoration-none">
+              <li><a href="#Clases-Objetos-Intancias" class="link-light text-decoration-none">
                 Clases, objetos e instancias</a>
               </li>
-              <li><a href="#Principios" class="link-dark text-decoration-none">
+              <li><a href="#Principios" class="link-light text-decoration-none">
                 4 Principios de la Programación Orientada a Objetos</a>
               </li>
-              <li><a href="#Beneficios" class="link-dark text-decoration-none">
+              <li><a href="#Beneficios" class="link-light text-decoration-none">
                 Beneficios de Programación Orientada a Objetos</a>
               </li>
-              <li><a href="#Conclusión" class="link-dark text-decoration-none">
+              <li><a href="#Conclusión" class="link-light text-decoration-none">
                 Conclusión</a>
               </li>
             </ul>

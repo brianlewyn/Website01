@@ -1,49 +1,54 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
 // Adjusting styles (Bootstrap 5)
+.navbar-brand {font-size: 0;}
+
+.bg-info {background: #4DFFF0 !important;}
 .bg-dark {background: #121212 !important;}
 .bg-secondary {background: #1f1f1f !important;}
 
-.link-light {color: #6c757d !important;}
+.link-secondary {color: #6c757d !important;}
 
 
 // My styles
 .Logo {
-   height: 2rem;
-
-   &:hover {
-      filter: invert(0.15);
-   }
+  height: 2.125rem;
+  &:hover {filter: invert(0.15);}
 }
 
 .CoverTitle {
-   position: relative;
+  position: relative;
 }
-.CoverTitle:before {
-   content: "Programación Orientada a Objetos";
-   font-family: 'Poppins';
-   font-size: calc(1rem + 3.5vw);
-   color: #fff;
-   text-shadow: #000 5px 5px 20px;
-   text-align: center;
-   
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
+.CoverTitle h1 {
+  font-family: 'Poppins';
+  font-size: calc(1rem + 3.5vw);
+  text-shadow: #000 5px 5px 20px;
+  
+  position: absolute;
+  top: 50%;   left: 50%;
+  transform: translate(-50%, -50%);
 
-   width: 70%;
-   display: flex;
-   justify-content: center;
+  width: 70%;
+  display: flex;
+  justify-content: center;
 
-   z-index: 100;
+  z-index: 100;
 }
-
 .carousel-inner img {
-   filter: brightness(85%);
+  filter: brightness(85%);
 }
 
-footer i.bx {
-   font-size: calc(1.2rem + 1.5vw);
-   line-height: 1.2;
+main p,
+main ul {
+  text-align: justify;
 }
+
+aside .Box-Menu {
+  top: 3.125rem;
+  font-family: 'Poppins';
+
+  li:hover {
+    text-decoration-line: underline;
+  }
+}
+// aside a { color: $purple; }

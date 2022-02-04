@@ -1,16 +1,43 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 
-// Adjusting styles (Bootstrap 5)
+// Var SCSS ==========
+$Bg-WhiteLight: #F5F5EB !important;
+$Bg-BlackDark: #121212 !important;
+$Bg-GreyDark: #1F1F1F !important;
+
+$Bdr-Black: #000 !important;
+$Bdr-White: #FFF !important;
+
+$Titl-White: #FFF !important;
+$Titl-Black: #000 !important;
+
+$Tx-White: #F8F9FABF !important;
+$Tx-Black: #08090AE0 !important;
+
+$lk-CyanLight: #0DCAF0 !important;
+$lk-GreyLight: #6C757D !important;
+$lk-WhiteLight: #F8F9FABF !important;
+
+
+// Adjusting styles (Bootstrap 5) ==========
 .navbar-brand {font-size: 0;}
 
-.bg-dark {background: #121212 !important;}
-.bg-secondary {background: #1f1f1f !important;}
+.bg-dark {background: $Bg-BlackDark;}
+.bg-secondary {background: $Bg-GreyDark;}
 
-.link-secondary {color: #6c757d !important;}
-.link-light {color: #F8F9FABF !important;}
+.link-secondary {color: $lk-GreyLight}
+.link-light {color: $lk-WhiteLight}
 
 
-// My styles
+// My scrollbar style ==========
+::-webkit-scrollbar {width: .7rem;}
+::-webkit-scrollbar-track {background: none;}
+::-webkit-scrollbar-thumb {
+	border-radius: .2rem;
+	background: #525355;
+}
+
+// My styles ==========
 header .Logo {
   height: 2.125rem;
   &:hover {filter: invert(0.15);}
@@ -36,17 +63,17 @@ header .Logo {
 }
 .carousel-inner img {filter: brightness(85%);}
 
-main p,
-main ul {
+main {
+  p, ul {
   text-align: justify;
-}
-
-main form .form-control {
-  font-size: 1.2rem;
-  background: none !important;
-  border: none;
-  border-bottom: 2px solid #000;
-  border-radius: 0;
+  }
+  form .form-control {
+    font-size: 1.2rem;
+    background: none !important;
+    border: none;
+    border-bottom: 2px solid $Bdr-Black;
+    border-radius: 0;
+  }
 }
 
 aside .Box-Menu {
@@ -57,49 +84,52 @@ aside .Box-Menu {
 }
 
 footer li:hover a.link-secondary {
-  color: #0DCAF0 !important;
+  color: $lk-CyanLight;
 }
 
+
+// Light or Dark theme by default ==========
 @media (prefers-color-scheme: light) {
   body {
-    color: #08090AE0 !important;
-    background: #F5F5EB;
+    color: $Tx-Black;
+    background: $Bg-WhiteLight;
   }
   h1,h2,h3,h4,h5,h6 {
-    color: #000;
+    color: $Titl-Black;
   }
 }
 
 @media (prefers-color-scheme: dark) {
   body {
-    color: #F8F9FABF !important;
-    background: #121212;
+    color: $Tx-White;
+    background: $Bg-BlackDark;
   }
+  
   h1,h2,h3,h4,h5,h6 {
-    color: #FFF;
+    color: $Titl-White;
   }
+  
   main {
-    a.link-primary {
-      color: #0dcaf0 !important;
-    }
+    a.link-primary {color: $lk-CyanLight;}
     form .form-control {
-      color: #FFF !important;
-      border-bottom: 2px solid #CED4DA;
+      color: $Titl-White;
+      border-bottom: 2px solid $Bdr-White;
     }
   }
+  
   aside {
     h3.border-dark {
-      border-color: #FFF !important;
+      border-color: $Bdr-White;
     }
     .Box-Menu {
       &.bg-dark {
         background: #4DFFF0 !important;
       }
       h3.text-light.border-light {
-        color:#000 !important;
-        border-color: #000 !important;
+        color:$Titl-Black;
+        border-color: $Bdr-Black;
       }
-      .link-light {color: #08080AD0 !important}
+      ul.link-light, a.link-light {color: $Tx-Black}
     }
   }
 }

@@ -187,48 +187,56 @@
 
           <br>
 
-          <form class="fs-5">
+          <form class="fs-5 gap-3 needs-validation" novalidate>
             <h3>Deja una respuesta</h3>
 
             <div class="row row-cols-1 row-cols-md-2">
               <div class="col mb-3">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="First name">
-                  <label for="floatingInput">First name</label>
-                </div>
-              </div>
-              
-              <div class="col mb-3">
-                <div class="form-floating">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="Last name">
-                  <label for="floatingInput">Last name</label>
+                  <input type="text" class="form-control" id="floatingInput01" placeholder="First name" required>
+                  <label for="floatingInput01" class="form-label">First name</label>
+                  <div class="valid-feedback">Looks good!</div>
                 </div>
               </div>
 
               <div class="col mb-3">
                 <div class="form-floating">
-                  <input type="text" class="form-control" id="floatingInput" placeholder="Subject name">
-                  <label for="floatingInput">Subject name</label>
+                  <input type="text" class="form-control" id="floatingInput02" placeholder="Last name" required>
+                  <label for="floatingInput02" class="form-label">Last name</label>
+                  <div class="valid-feedback">Looks good!</div>
                 </div>
               </div>
 
               <div class="col mb-3">
                 <div class="form-floating">
-                  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                  <label for="floatingInput">Email address</label>
+                  <input type="text" class="form-control" id="floatingInput03" placeholder="Subject name" required>
+                  <label for="floatingInput03" class="form-label">Subject name</label>
+                  <div class="valid-feedback">Looks good!</div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="form-floating">
+                  <input type="email" class="form-control" id="floatingInput04" placeholder="name@example.com" required>
+                  <label for="floatingInput04" class="form-label">Email address</label>
+                  <div class="valid-feedback">Looks good!</div>
+                  <div class="invalid-feedback">
+                    Please provide a email address.
+                  </div>
                 </div>
               </div>
 
               <div class="col mb-3 col-md-12">
                 <div class="form-floating">
-                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px"></textarea>
-                  <label for="floatingTextarea">Leave a comment here</label>
+                  <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea" style="height: 100px" required></textarea>
+                  <label for="floatingTextarea" class="form-label">Leave a comment here</label>
+                  <div class="valid-feedback">Looks good!</div>
                 </div>
               </div>
 
               <div class="col-12">
                 <button type="reset" class="btn btn-dark fs-5">Reset</button>
-                <button type="submit" class="btn btn-primary fs-5">Submit</button>
+                <button type="submit" class="btn btn-primary fs-5">Submit form</button>
               </div>
             </div>
           </form>
@@ -340,5 +348,6 @@
   
   <!-- Boostrap File -->
   <script src="/assets/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/form.js"></script>
 </body>
 </html>
